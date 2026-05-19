@@ -29,4 +29,8 @@
     --spacing-xl:  24px;
     --spacing-2xl: 32px;
 }
- 
+
+.router-link-exact-active {
+    background-color: var(--color-accent);
+    color: var(--color-cream);
+}
