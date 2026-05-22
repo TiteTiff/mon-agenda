@@ -2,6 +2,7 @@
 import { RouterLink, RouterView } from 'vue-router'
 import Header from './components/Header.vue'
 import SideBar from './components/SideBar.vue'
+import BottomNav from './components/BottomNav.vue'
 
 </script>
 
@@ -15,6 +16,7 @@ import SideBar from './components/SideBar.vue'
       </main>
     </div>
   </div>
+  <BottomNav/>
 </template>
 
 <style>

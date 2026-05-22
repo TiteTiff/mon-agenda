@@ -1,11 +1,5 @@
-<script>
-import { RouterLink, RouterView } from 'vue-router'
-import {defineComponent} from "vue";
+<script setup>
 import Calendar from "./Calendar.vue";
-
-export default defineComponent({
-  components: {Calendar}
-})
 
 </script>
 
@@ -22,9 +16,9 @@ export default defineComponent({
         Ajouter un événement
       </button>
     </div>
+    <p><router-link to="/calendar">Voir le calendrier</router-link></p>
   </div>
-  <router-link to="/calendar">View Calendar</router-link>
-  <RouterView />
+
 </template>
 
 <style>

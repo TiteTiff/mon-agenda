@@ -1,0 +1,80 @@
+{
+  "pagination": {
+    "current_page": 1,
+    "per_page": 10,
+    "total_items": 17,
+    "total_pages": 2
+  },
+  "notes": [
+    {
+      "id": "1",
+      "name": "Idées pour les vacances",
+      "text": "Partir en Bretagne début juillet. Prévoir la location de vélos et visiter le Mont-Saint-Michel.",
+      "created_at": "2026-05-10T09:15:00Z",
+      "updated_at": "2026-05-18T16:30:00Z"
+    },
+    {
+      "id": "2",
+      "name": "Recette tarte aux pommes",
+      "text": "200g de farine, 100g de beurre, 3 pommes, sucre vanillé. Cuisson 35min à 180°C.",
+      "created_at": "2026-05-12T11:00:00Z",
+      "updated_at": "2026-05-12T11:00:00Z"
+    },
+    {
+      "id": "3",
+      "name": "Réunion lundi",
+      "text": "Préparer le bilan Q1. Apporter les slides du projet Mercure. Contacter Marc avant.",
+      "created_at": "2026-05-19T08:45:00Z",
+      "updated_at": "2026-05-20T10:05:00Z"
+    },
+    {
+      "id": "4",
+      "name": "Livres à lire",
+      "text": "Le Problème à trois corps - Liu Cixin\nFondation - Asimov\nDune - Frank Herbert",
+      "created_at": "2026-05-14T20:00:00Z",
+      "updated_at": "2026-05-21T07:30:00Z"
+    },
+    {
+      "id": "05",
+      "name": "Code WiFi parents",
+      "text": "Freebox_AZER12 / motdepasse2024",
+      "created_at": "2026-04-03T15:20:00Z",
+      "updated_at": "2026-04-03T15:20:00Z"
+    },
+    {
+      "id": "06",
+      "name": "Suivi sport",
+      "text": "Semaine 20 : course 5km lundi, natation mercredi, repos jeudi-vendredi.",
+      "created_at": "2026-05-18T21:10:00Z",
+      "updated_at": "2026-05-21T06:50:00Z"
+    },
+    {
+      "id": "07",
+      "name": "Contact plombier",
+      "text": "M. Durand - 06 12 34 56 78. Devis fuite salle de bain : 180€.",
+      "created_at": "2026-05-05T13:00:00Z",
+      "updated_at": "2026-05-05T13:00:00Z"
+    },
+    {
+      "id": "08",
+      "name": "Objectifs 2026",
+      "text": "Finir la formation React. Lire 12 livres. Courir un 10km en moins de 55 minutes.",
+      "created_at": "2026-01-01T00:00:00Z",
+      "updated_at": "2026-05-15T19:00:00Z"
+    },
+    {
+      "id": "09",
+      "name": "Numéros utiles",
+      "text": "Médecin : 01 23 45 67 89\nPharmacien : 01 98 76 54 32\nGardienne : 06 11 22 33 44",
+      "created_at": "2026-03-20T10:30:00Z",
+      "updated_at": "2026-03-20T10:30:00Z"
+    },
+    {
+      "id": "10",
+      "name": "Courses bricolage",
+      "text": "Chevilles 6mm x20, vis inox 4x40 x50, peinture blanc satin 2.5L, pinceau plat 50mm.",
+      "created_at": "2026-05-21T08:00:00Z",
+      "updated_at": "2026-05-21T08:00:00Z"
+    }
+  ]
+}

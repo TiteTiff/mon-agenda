@@ -1,0 +1,26 @@
+{
+  "pagination": {
+    "current_page": 1,
+    "per_page": 10,
+    "total_items": 23,
+    "total_pages": 3
+  },
+  "checklists": [
+    {
+      "id": "1",
+      "name": "Courses de la semaine",
+      "created_at": "2026-05-20T14:32:00Z",
+      "updated_at": "2026-05-21T08:15:00Z",
+      "items_checked": "6",
+      "items_total": "12"
+    },
+    {
+      "id": "2",
+      "name": "Partir en vacances",
+      "created_at": "2026-05-20T14:32:00Z",
+      "updated_at": "2026-05-21T08:15:00Z",
+      "items_checked": "4",
+      "items_total": "17"
+    }
+  ]
+}
