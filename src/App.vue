@@ -9,9 +9,9 @@ import BottomNav from './components/BottomNav.vue'
 <template>
   <div class="min-h-screen bg-deep flex flex-col">
     <Header />
-    <div class="flex flex-1">
+    <div class="flex flex-1 h-full">
       <SideBar />
-      <main class="flex-1">
+      <main class="flex-1 bg-deep h-full">
         <RouterView />
       </main>
     </div>

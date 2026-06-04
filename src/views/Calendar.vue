@@ -1,25 +1,28 @@
 <script setup>
   import HeaderCalendar from '../components/HeaderCalendar.vue'
   import CalendarGrid from '../components/CalendarGrid.vue'
+  import ToCome from '../components/ToCome.vue'
 </script>
+
 <template>
-  <main>
-    <!-- Using HeaderCalendar and CalendarGrid Component -->
-    <i class="fa-solid fa-calendar-days"></i>
-    <HeaderCalendar/>
-    <CalendarGrid/>
-  </main>
-</template>
-<style>
-main{
-  width: 500px;
-  padding-bottom: 30px;
-  border-radius: 5px;
-  background-color: azure;
-  box-shadow: 5px 5px 20px 0 rgba(0, 0, 0, 0.5);
-  @media(max-width: 500px){
-    width: 90vw;
-  }
-}
-</style>
+
+    <div class="grid grid-cols-1 gap-2 bg-deep md:py-2 lg:gap-6 lg:p-6 lg:grid-cols-[4fr_1fr]">
+
+      <div
+          class="border-b border-border px-4 py-4 text-cream lg:rounded-md lg:border bg-surface">
+        <HeaderCalendar />
+        <CalendarGrid />
+      </div>
+
+      <div class="pb-16">
+        <ToCome />
+      </div>
+
+    </div>
+
+  </template>
+
+  <style>
+
+  </style>
 

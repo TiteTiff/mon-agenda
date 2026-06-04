@@ -10,7 +10,7 @@ const isSearchOpen = ref(false)
       <!-- Groupe logo + titre -->
       <div class="flex items-center gap-sm">
         <img :src="logo" alt="Quill" class="h-10 md:h-22" />
-        <div class="text-cream font-sans font-medium text-lg md:text-4xl">Quill</div>
+        <div class="text-cream font-sans font-medium text-4xl md:text-4xl">Quill</div>
       </div>
       <div class="text-cream font-sans flex items-center gap-md md:gap-lg text-lg md:text-2xl">
         <!-- Recherche fermée : on voit la loupe -->

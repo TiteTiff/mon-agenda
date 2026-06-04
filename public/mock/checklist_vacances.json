@@ -1,0 +1,22 @@
+{
+  "checklist_vacances": [
+    {
+      "id": "2",
+      "name": "Préparation départ vacances",
+      "created_at": "2026-05-21T09:00:00Z",
+      "updated_at": "2026-05-21T09:00:00Z",
+      "items": [
+        { "id": "1", "label": "Passeports",           "checked": true  },
+        { "id": "2", "label": "Billets d'avion",      "checked": true  },
+        { "id": "3", "label": "Réservation hôtel",    "checked": true  },
+        { "id": "4", "label": "Assurance voyage",     "checked": false },
+        { "id": "5", "label": "Valises faites",       "checked": false },
+        { "id": "6", "label": "Arrêt du courrier",    "checked": false },
+        { "id": "7", "label": "Prévenir voisins",     "checked": true  },
+        { "id": "8", "label": "Recharge téléphone",   "checked": false },
+        { "id": "9", "label": "Adaptateur secteur",   "checked": false },
+        { "id": "10", "label": "Guide de voyage",     "checked": true  }
+      ]
+    }
+  ]
+}
