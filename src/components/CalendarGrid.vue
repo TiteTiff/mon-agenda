@@ -1,7 +1,27 @@
 <script setup>
+
 const DAYS = ['Lun', 'Mar', 'Mer', 'Jeu', 'Ven', 'Sam', 'Dim']
+
+const props = defineProps({
+  currentMonth: Number,
+  currentYear: Number
+})
+
+const daysInMonth = new Date(props.currentYear, props.currentMonth, 0).getDate(); //demander le jour 0 d'un mois donne le dernier jour du mois précédent
+
+const firstDay = new Date(props.currentYear, props.currentMonth - 1, 1);
+const day = firstDay.getDay() === 0 ? 7 : firstDay.getDay(); //0 renvoie au dimanche alors qu'en France c'est 7, permet de convertir
+
+const prevMonth = props.currentMonth === 1 ? 12 : props.currentMonth - 1
+const prevYear = props.currentMonth === 1 ? props.currentYear - 1 : props.currentYear
+const daysInPrevMonth = new Date(prevYear, prevMonth, 0).getDate()
+
+//const daysPreviousMonth = []
+
 </script>
+
 <template>
+
   <div class="grid grid-cols-7 gap-2 text-center">
     <div
         v-for="(day, index) in DAYS"
