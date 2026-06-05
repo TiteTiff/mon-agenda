@@ -1,7 +1,11 @@
 <script setup>
+
 const DAYS = ['Lun', 'Mar', 'Mer', 'Jeu', 'Ven', 'Sam', 'Dim']
+
 </script>
+
 <template>
+
   <div class="grid grid-cols-7 gap-2 text-center">
     <div
         v-for="(day, index) in DAYS"

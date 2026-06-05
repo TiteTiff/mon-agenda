@@ -1,7 +1,15 @@
 <script setup>
+
   import HeaderCalendar from '../components/HeaderCalendar.vue'
   import CalendarGrid from '../components/CalendarGrid.vue'
   import ToCome from '../components/ToCome.vue'
+
+  import { ref } from 'vue'
+
+  const today = new Date()
+  const currentMonth = ref(today.getMonth() + 1)
+  const currentYear = ref(today.getFullYear())
+
 </script>
 
 <template>
@@ -10,7 +18,7 @@
 
       <div
           class="border-b border-border px-4 py-4 text-cream lg:rounded-md lg:border bg-surface">
-        <HeaderCalendar />
+        <HeaderCalendar @previous @today @next />
         <CalendarGrid />
       </div>
 
