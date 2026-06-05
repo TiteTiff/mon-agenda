@@ -3,7 +3,6 @@ import {ref, onMounted} from 'vue'
 import ListEditor from "../components/ListEditor.vue";
 
 const checklists = ref([])
-const list = ref([])
 
 onMounted(async () => {
   const response = await fetch('/mock/checklists.json')
@@ -18,7 +17,6 @@ const showForm = ref(false)
 const newList = ref("")
 
 function addList() {
-  if (selectedList.value === null) {
     checklists.value.push({
       id: String(checklists.value.length + 1),
       name: newList.value,
@@ -27,37 +25,14 @@ function addList() {
     })
     newList.value = "";
     showForm.value = false;
-  } else {
-    const existing = list.value.find(item => item.id === selectedList.value.id);
-    existing.name = list.title;
-    existing.text = list.content;
-    existing.updated_at = new Date().toLocaleDateString('fr-FR');
-  }
-  showForm.value = false
 }
 
 const selectedList = ref(null)
 
-function handleSave(data) {
-  const idx = checklists.value.findIndex(c => c.id === data.id)
-  if (idx !== -1) {
-    checklists.value[idx] = { ...checklists.value[idx], ...data }
-  }
-  selectedList.value = null
-}
-
-function handleDelete() {
-  if (selectedList.value) {
-    const data = Array.isArray(selectedList.value) ? selectedList.value[0] : selectedList.value
-    checklists.value = checklists.value.filter(c => c.id !== data.id)
-  }
-  selectedList.value = null
-}
-
 async function selectList(list) {
   const response = await fetch(`/mock/checklist_${list.id}.json`)
   const data = await response.json()
-  selectedList.value = data.checklist;
+  selectedList.value = data.checklist[0];
 }
 
 </script>
@@ -65,9 +40,9 @@ async function selectList(list) {
 <template>
 
   <ListEditor :list="selectedList" v-if="selectedList !== null"
-              @save="handleSave"
+              @save="selectedList = null"
               @cancel="selectedList = null"
-              @delete="handleDelete"/>
+              @delete="selectedList = null"/>
 
   <div v-else class="bg-deep flex flex-col p-4 pb-16">
 
@@ -81,7 +56,7 @@ async function selectList(list) {
 
     <div class="bg-surface border border-border rounded-lg p-sm mt-sm flex flex-col" v-if="showForm">
       <form @submit.prevent="addList" class="flex flex-col gap-sm p-md">
-        <input autofocus v-model="newList" type="text" required="required" placeholder="Nom de la liste"
+        <input v-model="newList" type="text" required="required" placeholder="Nom de la liste"
                class="bg-raised text-cream py-md px-md border border-border rounded-lg focus:border-accent outline-none"/>
         <div class="flex gap-sm">
           <input type="submit" value="Créer" class="bg-accent text-cream border-border rounded-lg w-full py-md"/>

@@ -23,7 +23,7 @@ const formattedDate = today.toLocaleDateString('fr-FR', {
       </span>
       </div>
 
-      <button class="bg-accent text-cream px-md py-md rounded-md text-md hidden sm:flex items-center gap-2">
+      <button class="bg-accent text-cream px-md py-md rounded-md text-md sm:flex items-center gap-2">
         <i class="fa-solid fa-plus"></i>
         <span class="hidden sm:inline-block">Ajouter</span>
       </button>
