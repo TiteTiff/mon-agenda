@@ -29,6 +29,7 @@
     currentYear.value=today.getFullYear();
   }
 
+
 </script>
 
 <template>
@@ -38,7 +39,7 @@
       <div
           class="border-b border-border px-4 py-4 text-cream lg:rounded-md lg:border bg-surface">
         <HeaderCalendar @previous="goToPrevious" @today="goToToday" @next="goToNext" :currentMonth="currentMonth" :currentYear="currentYear" />
-        <CalendarGrid />
+        <CalendarGrid :currentMonth="currentMonth" :currentYear="currentYear" />
       </div>
 
       <div class="pb-16">

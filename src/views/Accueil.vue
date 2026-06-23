@@ -62,11 +62,11 @@ const items = [
 
     <div class="text-cream bg-surface border border-border rounded-lg p-md mt-md m-6">
       <div class="w-full flex items-center gap-3">
-        <div class="bg-raised rounded-lg p-3 text-accent">
+        <div class="bg-accent-muted rounded-lg text-accent">
           <i class="fa-regular fa-clock fa-xl"></i>
         </div>
 
-        <div class="flex flex-col">
+        <div class="flex flex-col p-md ">
           <span class="text-cream text-lg"> Aperçu du jour </span>
           <p class="text-cream text-sm"> Les activités en cours</p>
         </div>
@@ -74,7 +74,7 @@ const items = [
 
       <div class="grid grid-cols-1 md:grid-cols-3 gap-4 w-full">
 
-        <div class="text-cream font-light bg-raised-muted border border-border rounded-lg p-sm mt-md flex flex-col">
+        <div class="text-cream font-light bg-raised border border-border rounded-lg p-md mt-md flex flex-col">
           <div class="flex justify-between">
             <span> Rendez-vous</span>
             <i class="fa-regular fa-calendar fa-md text-accent"></i>
@@ -82,7 +82,7 @@ const items = [
           <p class="text-2xl font-medium"> 2</p>
         </div>
 
-        <div class="text-cream font-light bg-raised-muted border border-border rounded-lg p-sm mt-md flex flex-col">
+        <div class="text-cream font-light bg-raised border border-border rounded-lg p-md mt-md flex flex-col">
           <div class="flex justify-between">
             <span> Taches en cours</span>
             <i class="fa-regular fa-square-check fa-md text-success"></i>
@@ -90,7 +90,7 @@ const items = [
           <p class="text-2xl font-medium"> 3</p>
         </div>
 
-        <div class="text-cream font-light bg-raised-muted border border-border rounded-lg p-sm mt-md flex flex-col">
+        <div class="text-cream font-light bg-raised border border-border rounded-lg p-md mt-md flex flex-col">
           <div class="flex justify-between">
             <span> Notes récentes</span>
             <i class="fa-regular fa-file-lines fa-md text-subtle"></i>
